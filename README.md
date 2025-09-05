@@ -90,6 +90,26 @@ git checkout nombre-rama
 ```
 
 ---
+## comandos GitHub
 
+```bash
+# Crea un archivo README.md (o agrega al final si ya existe) con el texto "# nombre del archivo"
+echo "# nombre del archivo" >> README.md
 
+# Inicializa un nuevo repositorio Git en la carpeta actual
+git init 
 
+# Agrega el archivo README.md al área de preparación (staging area)
+git add README.md
+
+# Hace el primer commit con el mensaje "first commit"
+git commit -m "first commit"
+
+# Renombra la rama actual a "main" (en lugar de "master")
+git branch -M main
+
+# Conecta el repo local con el remoto en GitHub
+git remote add origin https://github.com/<tu-usuario>/<nombre-del-repositorio>.git
+
+# Envía (push) la rama main al repositorio remoto y establece el seguimiento
+git push -u origin main
