@@ -63,6 +63,33 @@ git push origin main o master
 ```
 ---
 
+## Actualizar el repositorio local  
+
+```bash
+# Descargar los últimos cambios de GitHub
+git pull origin main o master
+```
+
+---
+
+## Ramas (Branches)  
+
+```bash
+# Crear una nueva rama
+git branch nombre-rama
+
+# Combinar cambios de una rama a otra (ej. main)
+git merge nombre-rama
+
+# Crear y cambiar a la vez
+git checkout -b nombre-rama
+
+# Cambiar a una rama existente
+git checkout nombre-rama
+
+```
+
+---
 
 
 
