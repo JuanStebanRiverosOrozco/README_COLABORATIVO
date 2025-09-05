@@ -24,8 +24,43 @@ git config --global color.ui auto
 # Idioma (ejemplo: inglés)
 git config --global i18n.commitEncoding utf-8
 git config --global i18n.logOutputEncoding utf-8
+
 ```
 
+---
+
+
+## Flujo básico de trabajo  
+
+```bash
+# Clonar un repositorio existente desde GitHub
+git clone <url-del-repositorio>
+
+# Verificar estado de los archivos (cambios pendientes)
+git status
+
+# Agregar archivos específicos al área de preparación
+git add nombre-archivo
+
+# Agregar todos los archivos modificados
+git add .
+
+# Guardar cambios en un commit con un mensaje deben ser claros y descriptivos.
+git commit -m "Descripción clara del cambio"
+
+#Cambiar solo el mensaje del último commit
+git commit --amend -m "Nuevo mensaje correcto"
+
+#Forzar el push (cuando sabes que quieres sobrescribir el commit)
+git push origin master --force
+
+#Evitar el force y traer primero el remoto
+git pull origin master --rebase
+
+# Enviar los cambios al repositorio remoto (GitHub)
+git push origin main o master
+
+```
 ---
 
 
